@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="{CHARSET}">
+	<title></title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<style>
+		body {
+			background-image: url("3.jpg");
+			background-size: cover;
+		}
+
+		.xv {
+			align-items: center;
+			margin-top: 200px;
+			margin-left: 20%;
+			border: none;
+			padding: 20px;
+			width: 700px;
+			background-color: rgba(255, 255, 255, .6);
+			border-radius: 1.5rem;
+			box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 20%);
+		}
+
+		.denglu {
+			text-align: center;
+			color: rgb(197, 64, 15);
+			font-size: xx-large;
+			font-weight: 700;
+		}
+
+		.wenzi {
+			font: 700 large 宋体;
+			text-align: center;
+			color: rgb(214, 108, 21);
+		}
+
+		form {
+			padding: 3px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="xv">
+		<div class="denglu">登录</div>
+		<div class="wenzi">
+			<form>
+				用户名：<input type="text" name="username"> 密码<input type="password" name="password"><br>
+				<label for="nan">男</label> <input type="radio" name="sex" id="nan">
+				<label for="nv">女</label><input type="radio" name="sex" id="nv"><br>
+				所在地：<select>
+					<option selected="selected">广州</option>
+					<option>汕头</option>
+					<option>江门</option>
+					<option>梅州</option>
+					<option>汕尾</option>
+				</select><br>
+				我们的网页好看吗:
+				<label for="haokan">好看</label> <input type="checkbox" name="choose" id="haokan">
+				<label for="henhaok"> 很好看</label><input type="checkbox" name="choose" id="henhaok">
+				<label for="chaohk"> 超好看</label><input type="checkbox" name="choose" id="chaohk">
+				<label for="budi">超级无敌好看</label> <input type="checkbox" name="choose" id="wudi"><br>
+				<input type="checkbox" name="feng" checked>喜欢这个网页吗<br>
+				<a href="苏州.html">返回</a>
+		</div>
+		</form>
+	</div>
+</body>
+
+</html>
