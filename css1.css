@@ -1,12 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
 #wapper {
 	height: 40px;
-	background-color: #3887f0;
+	background-color: #e76f25;
 	margin: 0 auto;
 }
 
 #wapper ul li {
 	list-style-type: none;
-	width: 150px;
+	width: 130px;
 	height: 40px;
 	text-align: center;
 	margin-right: 40px;
@@ -15,6 +20,7 @@
 	transition: 0.5s;
 	line-height: 40px;
 }
+
 
 #wapper ul li:hover {
 	background-color: wheat;
@@ -42,56 +48,83 @@
 	display: block;
 }
 
+.dati {
+	background-color: rgba(255, 255, 255, .6);
+	opacity: 0.8;
+	width: 900px;
+	height: 500px;
+	margin: 0 auto;
+	border: solid darkorange 2px;
+}
+
+.datileft {
+	width: 300px;
+	height: 100%;
+	border-right: solid darkorange 2px;
+
+}
+
+.datiright {
+	width: 550px;
+	height: 100%;
+}
+
+.datiright,
+.datileft {
+	float: left;
+}
+
+.datiright ul {
+	margin: 0 auto;
+}
+
+h1 {
+	color: white;
+}
+
+.datiright ul li {
+	font-size: 30px;
+	font-weight: bold;
+	width: 158px;
+	height: 40px;
+	margin-left: 50px;
+}
+
 .neir {
-	height: 450px;
-	margin-top: 803px;
+	margin-top: 620px;
+	width: 1150px;
+	height: 600px;
 	background-color: rgba(255, 255, 255, .6);
 	border-radius: 1.5rem;
 	box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 20%);
+	margin-left: 3%;
 
 }
 
 .neir .left {
-	text-align: center;
-	width: 25%;
+	border-radius: 1.5rem;
+	width: 35%;
 	height: 100%;
-	background-color: white;
 	float: left;
-	background-image: url("2.jpg");
-}
 
-.left ul {
-	list-style-type: none;
-	padding-left: 5px;
-}
-
-.left ul li {
-	font-size: 30px;
-	font-weight: bold;
-	border: dashed 1px saddlebrown;
-	width: 158px;
-	height: 40px;
-	margin-bottom: 20px;
-	margin-top: 40px;
-	background-color: deepskyblue;
-}
-
-.left ul li a {
-	text-decoration: none;
-	color: saddlebrown;
-	text-align: center;
-	display: block;
-}
-
-.left ul li:hover {
-	background-color: royalblue;
 }
 
 .neir .right {
-	width: 70%;
+	width: 60%;
 	height: 100%;
 	margin-right: 3px;
 	float: right;
+	padding: 25px;
+	line-height: 32px;
+}
+
+p {
+	font-family: 宋体;
+	font-size: 15px;
+}
+
+h2 {
+	text-decoration: underline;
 }
 
 .bian {
@@ -104,7 +137,6 @@
 
 .foot {
 	height: 600px;
-	background-color: ;
 	margin: 0 auto;
 }
 
@@ -129,28 +161,16 @@
 	box-shadow: 3px 5px 20px 3px;
 }
 
-.vo {
-	height: 400px;
-	margin: 0 auto;
-	background-image: url("微信图片_20221101085322.jpg");
-}
 
-* {
-	margin: 0;
-	padding: 0;
-	font-family: 宋体;
-}
 
 body {
-	background-image: url("5.jpg");
+	background-image: url("1.jpg");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: contain;
 	background-position: 0px 60px;
 	background-color: #FFE99F;
 }
-
-
 
 h5 {
 	float: right;
@@ -178,8 +198,10 @@ p {
 
 .tuu {
 	text-align: center;
+	font: 700 17px 宋体;
 }
 
-.video {
+.v1 {
 	float: left;
+	border-radius: 1.5rem;
 }
