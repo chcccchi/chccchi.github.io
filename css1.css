@@ -128,10 +128,10 @@ h2 {
 }
 
 .bian {
-	height: 15px;
+	height: 13px;
 	background-color: white;
-	margin-top: 6px;
-	margin-bottom: 6px;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 
@@ -152,9 +152,19 @@ h2 {
 	margin-left: 23px;
 	margin-top: 9px;
 }
+.box7{
+	text-align: center;
+	background-color: rgba(255, 255, 255, .6);
+	border-radius: 1.5rem;
+	box-shadow: 0 0 1rem 0.2rem rgb(0 0 0 / 20%);
+	margin-left: 3%;
+	width: 1150px;
+	height: 200px;
+	margin-top: 220px;
+}
 
 .tu {
-	width: 350px;
+	width: 340px;
 	height: 240px;
 	margin-left: 25px;
 	border-radius: 150px;
@@ -195,13 +205,27 @@ p {
 	text-indent: 2em;
 	line-height: 32px;
 }
-
+.chi{
+	margin-left: 50px;
+	margin-bottom: 20px;
+	color: black;
+    font-style: oblique;
+}
 .tuu {
 	text-align: center;
-	font: 700 17px 宋体;
+	font: 700 27px 宋体;
 }
 
 .v1 {
 	float: left;
 	border-radius: 1.5rem;
+}
+.huodong{
+	font-size: large;
+	text-align: center;
+}
+.di{
+	background-color: #b95517;
+	height: 250px;
+	margin-top: 600px;
 }

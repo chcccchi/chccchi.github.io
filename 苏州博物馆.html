@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="4.png" type="image/x-icon ">
+    <title>苏州旅游局-苏州博物馆</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 1300px;
+            height: 30px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #ebbba7 0%, #cfc7f8 100%);
+        }
+
+        .top ul li {
+            list-style-type: none;
+            font-size: 16px;
+            float: left;
+            margin-left: 45px;
+        }
+
+        .top ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            width: 140px;
+            height: 30px;
+        }
+
+        .top ul li a:hover {
+            background-color: salmon;
+        }
+
+        .sousuo {
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+
+        .body {
+            width: 1280px;
+            height: 1300px;
+            margin: 0 auto;
+        }
+
+        .body_left {
+            width: 990px;
+            height: 100%;
+            float: left;
+        }
+
+        .body_left_t {
+            width: 100%;
+            height: 680px;
+            background-color: antiquewhite;
+            background-image: url();
+            box-shadow: 4px 4px 8px 4px slategrey;
+            margin-bottom: 20px;
+        }
+
+        .body_left_t_1 {
+            width: 980px;
+            height: 380px;
+            background-image: url(苏州博物馆1.jpg);
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 5px solid antiquewhite;
+        }
+
+        .zz {
+            width: 360px;
+            height: 360px;
+            background-color: gainsboro;
+            opacity: 0.5;
+            border-radius: 180px 180px 180px 180px;
+            box-shadow: 8px 10px 20px 10px antiquewhite;
+            position: absolute;
+        }
+
+        .name {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .name1 {
+            margin-left: 110px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .name2 {
+            margin-left: 40px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .xiaozi {
+            text-align: right;
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-left: 5px;
+            font-family: "楷体", "楷体_GB2312";
+        }
+
+        .p1,
+        .p2 {
+            font-size: 16px;
+            color: darkgreen;
+        }
+
+        .body_left_f {
+            width: 100%;
+            height: 600px;
+            background-color: cornflowerblue;
+            background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+            opacity: 0.8;
+        }
+
+        .body_left_f_1 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 85px;
+            margin-left: 70px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            border-radius: 100px 20px 120px 0;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        .tt1 {
+            width: 330px;
+            height: 260px;
+            margin-top: 30px;
+            margin-left: 45px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .tt2 {
+            width: 330px;
+            height: 260px;
+            margin-top: 28px;
+            margin-left: 35px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .body_left_f_2 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 65px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .wz1,
+        .wz2 {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 14px;
+        }
+
+        .body_right {
+            width: 250px;
+            height: 100%;
+            background-color: #E6FFBB;
+            background-image: linear-gradient(to right, #ebbba7 0%, #cfc7f8 100%);
+            float: left;
+            margin-left: 35px;
+            margin-top: 8px;
+        }
+
+        .body_right ul li a {
+            text-decoration: none;
+            color: yellowgreen;
+            text-align: center;
+            display: block;
+            line-height: 40px;
+            background-color: yellow;
+        }
+
+        .body_right ul li a:hover {
+            color: pink;
+            font-size: 25px;
+        }
+
+        .body_right ul {
+            list-style-type: none;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+
+        .body_right ul li {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid 5px cornflowerblue;
+            width: 158px;
+            height: 40px;
+            margin-bottom: 22px;
+        }
+
+        .body_right_t {
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 150px;
+            width: 170px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border: solid 8px cornflowerblue;
+        }
+
+        .one:hover {
+            border: solid 8px pink;
+        }
+
+        .two {
+            width: 200px;
+            height: 500px;
+            margin-left: 18px;
+            border: solid 8px peachpuff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="a">首页</a></li>
+            <li><a href="a">热门精选</a></li>
+            <li><a href="a">攻略游记</a></li>
+            <li><a href="a">服务中心</a></li>
+            <li><a href="a">查看更多</a></li>
+        </ul>
+        <input class="sousuo" type="text" value="🔍搜索旅游资讯" />
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_t">
+                <div class="body_left_t_1">
+                    <div class="zz">
+                        <div class="name">
+                            <h3 class="name1">旅游景区</h3>
+                            <h3 class="name2">苏州博物馆</h3>
+                            <hr />
+                            <hr />
+                            <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body_left_t_2">
+                    <h2>简介</h2>
+                    <br />
+                    <p class="p1">
+                        苏州博物馆，位于苏州市姑苏区东北街204号，成立于1960年1月1日，馆址为太平天国忠王府。2006年10月6日，由贝聿铭设计的苏州博物馆本馆建成并正式对外开放。本馆占地面积约10700平方米，建筑面积19000余平方米，加上太平天国忠王府，总建筑面积达26500平方米，是收藏、展示、研究、传播苏州历史、文化、艺术的地方性综合性博物馆。
+                    </p>
+                    <br />
+                    <p class="p2">
+                        苏州博物馆共有吴地遗珍、吴塔国宝、吴中风雅、吴门书画四个基本陈列，馆藏藏品总数24729件/套，珍贵文物9647件/套，其中一级品222件/套，二级品829件/套，三级品8596件/套，以历年考古出土文物、明清书画和工艺品见长。苏州博物馆太平天国忠王府为首批全国重点文物保护单位。2008年5月，苏州博物馆成为首批国家一级博物馆。在整体布局上，新馆巧妙地借助水面，与紧邻的拙政园、忠王府融会贯通，成为其建筑风格的延伸。新馆建筑群坐北朝南，被分成三大块：中央部分为入口、中央大厅和主庭院；西部为博物馆主展区；东部为次展区和行政办公区。这种以中轴线对称的东、中、西三路布局，和东侧的忠王府格局相互映衬，十分和谐。新馆与原有拙政园的建筑环境既浑然一体，相互借景、相互辉映，符合历史建筑环境要求，又有其本身的独立性，以中轴线及园林、庭园空间将两者结合起来，无论空间布局和城市机理都恰到好处。
+                    </p>
+                </div>
+            </div>
+            <div class="body_left_f">
+                <div class="body_left_f_1">
+                    <img class="tt1" src="苏州博物馆2.jpg" />
+                    <h4>总俯视图</h4>
+                    <br />
+                    <p class="wz1">
+                        苏州博物馆本馆占地面积约10700平方米，建筑面积19000余平方米。馆区以中央大厅为中心，中央大厅南侧为主入口、庭院及艺术品商店，中央大厅北侧为主庭院，分布有湖面凉亭和假山等园林景观。中央大厅东侧由东廊连接为紫藤园和现代艺术厅及忠王府。中央大厅西侧由西廊连接为吴地遗珍、吴塔国宝、吴中风雅、吴门书画四个常设展厅。游人可以通过室内荷花池上方的悬臂楼梯到达地下室，特展厅、影视厅、报告厅均位于此。
+                    </p>
+                </div>
+                <div class="body_left_f_2">
+                    <img class="tt2" src="苏州博物馆3.jpg" />
+                    <h4>吴中风雅</h4>
+                    <br />
+                    <p class="wz2">
+                        吴中风雅展位于一层北部，由雕镂神工、文房雅事、闲情偶寄、迎神纳财、锦绣浮生、宋画斋、书斋长物、陶冶之珍、攻玉巧技9个展厅组成，“吴中风雅”系列文物千姿百态，玲珑剔透，包括明书斋陈设、瓷器、玉器、竹木牙角器、文具、赏玩杂件、民俗物品、织绣服饰等主题展室。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_t">
+                <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+            </div>
+            <div class="body_right_f">
+                <ul>
+                    <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                    <li><a href="拙政园.html">拙政园</a></li>
+                    <li><a href="金鸡湖.html">金鸡湖</a></li>
+                    <li><a href="同里古镇.html">同里古镇</a></li>
+                    <li><a href="狮子林.html">狮子林</a></li>
+                    <li><a href="留园.html">留园</a></li>
+                    <li><a href="周庄古镇.html">周庄古镇</a></li>
+                </ul>
+                <img class="two" src="苏州博物馆4.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

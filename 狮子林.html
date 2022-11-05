@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link rel="icon" href="4.png" type="image/x-icon ">
+		<title>苏州旅游局-狮子林</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.top{
+				width: 1300px;
+	            height: 30px;
+	            margin: 0 auto;
+	            background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+			}
+			.top ul li{
+				list-style-type: none;
+	            font-size: 16px;
+	            float: left;
+	            margin-left: 45px;
+			}
+			.top ul li a{
+				text-decoration: none;
+	            color: black;
+	            font-weight: bold;
+	            text-align: center;
+	            line-height: 30px; 
+	            display: block;
+	            width: 140px;
+	            height: 30px;
+			}
+			.top ul li a:hover{
+	            background-color: salmon;
+            }
+			.sousuo{
+				margin-top: 5px;
+				margin-left: 60px;
+			}
+			.body{
+				width: 1280px;
+				height: 1300px;
+				margin: 0 auto;
+			}
+			.body_left{
+				width: 990px;
+				height: 100%;
+				float: left;
+			}
+			.body_left_t{
+				width:100%;
+				height:680px ;
+				background-color: antiquewhite;
+				box-shadow: 4px 4px 8px 4px slategrey;
+				margin-bottom: 20px;
+			}
+			.body_left_t_1{
+				width: 980px;
+				height: 380px;
+				background-image: url(狮子林1.jpg);
+				margin: 0 auto;
+				margin-top: 5px;
+				border: 5px solid antiquewhite;
+			}
+			.zz{
+				width: 360px;
+				height: 360px;
+				background-color: gainsboro;
+				opacity: 0.6;
+				border-radius: 180px 180px 180px 180px;
+				box-shadow: 8px 10px 20px 10px antiquewhite;
+				position: absolute;
+			}
+			.name{
+				width: 300px;
+				height: 200px;
+				margin: 0 auto;
+				margin-top: 110px;
+			}
+			.name1{
+				margin-left: 110px;
+				font-size: 33px;
+				font-weight: bold;
+			}
+			.name2{
+				margin-left: 40px;
+				font-size: 33px;
+				font-weight: bold;
+			}
+			.xiaozi{
+				text-align: right;
+				font-size: 15px;
+				margin-left: 110px;
+			}
+			h2{
+				margin-left: 5px;
+	            font-size: 20px;
+			}
+			p{
+				text-indent: 2em;
+				margin-left: 5px;
+				font-family: "楷体","楷体_GB2312";
+			}
+			.p1,.p2{
+				font-size: 16px;
+				color: darkgreen;
+			}
+			.body_left_f{
+				width: 100%;
+				height: 600px;
+				background-color: cornflowerblue;
+				background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+				opacity: 0.8;
+			}
+			.body_left_f_1{
+				width: 390px;
+				height: 85%;
+				float: left;
+				margin-top: 85px;
+				margin-left: 70px;
+				background-color: white;
+				box-shadow: 3px 3px 6px 3px darkgray inset;	
+				border-radius: 100px 20px 120px 0;
+				background-image: linear-gradient(-45deg,#ffffff,#FFFACD);
+			}
+			.tt1{
+				width: 330px;
+				height: 260px;
+				margin-top: 30px;
+				margin-left: 45px;
+				border-radius: 10px;
+				box-shadow: 2px 2px 4px 2px silver;
+			}
+			.tt2{
+				width: 330px;
+				height: 260px;
+				margin-top: 28px;
+				margin-left: 35px;
+				box-shadow: 2px 2px 4px 2px silver;
+			}
+			.body_left_f_2{
+				width: 390px;
+				height: 85%;
+				float: left;
+				margin-top: 30px;
+				margin-left: 65px;
+				background-color: white;
+				box-shadow: 3px 3px 6px 3px darkgray inset;
+				background-image: linear-gradient(-45deg,#ffffff,#FFFACD);
+			}
+			h4{
+				font-size: 18px;
+				margin-left: 15px;
+			}
+			.wz1,.wz2{
+				font-size: 16px;
+				margin-left: 15px;
+				margin-right: 14px;
+			}
+			.body_right{
+                width:250px;
+                height:100%;
+                background-color:#E6FFBB ;
+                background-image: linear-gradient(to right, #a8edea 0%, #fed6e3 100%);
+                float: left;
+                margin-left: 35px;
+                margin-top: 8px;
+            }
+			.body_right ul li a{
+                text-decoration: none;
+                color: yellowgreen;
+                text-align: center;
+                display: block;
+                line-height: 40px;
+                background-color: yellow;
+            }
+            .body_right ul li a:hover{
+                color: pink;
+                font-size: 25px;
+            }
+            .body_right ul{
+                list-style-type: none;
+                padding-top: 40px;
+                padding-left: 40px;
+            }
+            .body_right ul li{
+                font-size: 20px;
+                font-weight: bold;
+                border: solid 5px cornflowerblue;
+                width: 158px;
+                height: 40px;
+                margin-bottom: 22px;
+            }
+            .body_right_t{
+                width: 100%;
+                height:180px;
+                margin-top: 20px;
+            }
+            .one{
+                height: 150px;
+                width: 170px;
+                margin-left: 25px;
+                margin-top: 10px;
+                border: solid 8px cornflowerblue;
+            }
+            .one:hover{
+                border: solid 8px pink;
+            }
+            .two{
+            	width: 200px;
+            	height: 500px;
+            	margin-left: 18px;
+            	border: solid 8px peachpuff;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="top">
+			<ul>
+				<li><a href="a">首页</a></li>
+				<li><a href="a">热门精选</a></li>
+				<li><a href="a">攻略游记</a></li>
+				<li><a href="a">服务中心</a></li>
+				<li><a href="a">查看更多</a></li>
+			</ul>
+			<input class="sousuo" type="text" value="🔍搜索旅游资讯"/>
+		</div>
+		<div class="body">
+			<div class="body_left">
+				<div class="body_left_t">
+					<div class="body_left_t_1">
+						<div class="zz">
+							<div class="name">
+								<h3 class="name1">旅游景区</h3>
+							    <h3 class="name2">狮子林</h3>
+							    <hr />
+							    <hr />
+							    <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+							</div>
+						</div>
+					</div>
+					<div class="body_left_t_2">
+						<h2>简介</h2>
+						<br />
+					    <p class="p1"> 狮子林始建于元代至正二年（1342年），是中国古典私家园林建筑的代表之一。属于苏州四大名园之一。狮子林同时又是世界文化遗产、全国重点文物保护单位、国家AAAA级旅游景区。  狮子林位于苏州城内东北部。因园内石峰林立，多状似狮子，故名“狮子林”。狮子林平面呈长方形，面积约15亩，林内的湖石假山多且精美，建筑分布错落有致，主要建筑有燕誉堂、见山楼、飞瀑亭、问梅阁等。</p>
+					    <br />
+				        <p class="p2">由于林园几经兴衰变化，寺、园、宅分而又合，传统造园手法与佛教思想相互融合，以及近代贝氏家族把西洋造园手法和家祠引入园中，使其成为融禅宗之理、园林之乐于一体的寺庙园林。狮子林假山是中国古典园林中堆山最曲折，最复杂的实例之一。因园内"林有竹万，竹下多怪石，状如狻猊(狮子)者"，又因天如禅师惟则得法于浙江天目山狮子岩普应国师中峰，为纪念佛徒衣钵、师承关系，取佛经中狮子座之意，故名"师子林"、"狮子林"。亦因佛书上有"狮子吼"一语("狮子吼"是指禅师传授经文)，且众多假山酷似狮形而命名。天如禅师谢世以后，弟子散去，寺园逐渐荒芜。</p>
+					</div>
+				</div>
+				<div class="body_left_f">
+					<div class="body_left_f_1">
+						<img class="tt1" src="狮子林2.jpg"/>
+						<h4>问梅阁</h4>
+						<br />
+						<p class="wz1">问梅阁名字出自禅宗公案,是西部园景的主体建筑。筑于土山之上,阁前遍植梅树,问梅阁周边种有一小片红梅、绿梅,林中铺地也以梅花点缀。重檐巍峨的问梅阁中,悬挂“绮窗春讯”匾额,取自唐代王维《杂诗》“来日绮窗前,寒梅著花未诗意。阁内的桌椅都以梅花造型,桌下有精美的梅花雕刻,窗纹、地面都有梅花图案,八扇屏风上的书画也以梅为主题,体现了文人士大夫的审美情趣。</p>
+					</div>
+					<div class="body_left_f_2">
+						<img class="tt2" src="狮子林3.jpg"/>
+						<h4>假山王国</h4>
+						<br />
+						<p class="wz2">元末明初建园时，搜集了大量北宋“花石纲”的遗物，假山上有石峰和石笋，石缝间长着古树和松柏。石笋上悬葛垂萝。在假山顶上，耸立着著名的五峰：居中为狮子峰，东侧为含晖峰，西侧为吐月峰。两侧为立玉、昂霄峰及数十小峰。清代文人朱炳靖钻过假山后写道：“对面石势阻，回头路忽通。如穿几曲珠，旋绕势嵌空，如逢八阵图，变化形无穷。故路忘出入，新术迷西东。同游偶分散，音闻人不逢。</p>
+					</div>
+				</div>
+			</div>
+			<div class="body_right">
+				<div class="body_right_t">
+                    <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+				</div>
+                <div class="body_right_f">
+                    <ul>
+                        <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                        <li><a href="拙政园.html">拙政园</a></li>
+                        <li><a href="金鸡湖.html">金鸡湖</a></li>
+                        <li><a href="同里古镇.html">同里古镇</a></li>
+                        <li><a href="狮子林.html">狮子林</a></li>
+                        <li><a href="留园.html">留园</a></li>
+                        <li><a href="周庄古镇.html">周庄古镇</a></li>
+                    </ul>
+                    <img class="two" src="狮子林4.jpg"/>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>

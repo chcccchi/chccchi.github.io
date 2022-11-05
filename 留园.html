@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="4.png" type="image/x-icon ">
+    <title>苏州旅游局-留园</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 1300px;
+            height: 30px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        .top ul li {
+            list-style-type: none;
+            font-size: 16px;
+            float: left;
+            margin-left: 45px;
+        }
+
+        .top ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            width: 140px;
+            height: 30px;
+        }
+
+        .top ul li a:hover {
+            background-color: salmon;
+        }
+
+        .sousuo {
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+
+        .body {
+            width: 1280px;
+            height: 1300px;
+            margin: 0 auto;
+        }
+
+        .body_left {
+            width: 990px;
+            height: 100%;
+            float: left;
+        }
+
+        .body_left_t {
+            width: 100%;
+            height: 680px;
+            background-color: antiquewhite;
+            background-image: url();
+            box-shadow: 4px 4px 8px 4px slategrey;
+            margin-bottom: 20px;
+        }
+
+        .body_left_t_1 {
+            width: 980px;
+            height: 380px;
+            background-image: url(留园1.jpg);
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 5px solid antiquewhite;
+        }
+
+        .zz {
+            width: 360px;
+            height: 360px;
+            background-color: gainsboro;
+            opacity: 0.4;
+            border-radius: 180px 180px 180px 180px;
+            box-shadow: 8px 10px 20px 10px antiquewhite;
+            position: absolute;
+        }
+
+        .name {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .name1 {
+            margin-left: 110px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .name2 {
+            margin-left: 40px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .xiaozi {
+            text-align: right;
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-left: 5px;
+            font-family: "楷体", "楷体_GB2312";
+        }
+
+        .p1,
+        .p2 {
+            font-size: 16px;
+            color: darkgreen;
+        }
+
+        .body_left_f {
+            width: 100%;
+            height: 600px;
+            background-color: cornflowerblue;
+            background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+            opacity: 0.8;
+        }
+
+        .body_left_f_1 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 85px;
+            margin-left: 70px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            border-radius: 100px 20px 120px 0;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        .tt1 {
+            width: 330px;
+            height: 260px;
+            margin-top: 30px;
+            margin-left: 45px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .tt2 {
+            width: 330px;
+            height: 260px;
+            margin-top: 28px;
+            margin-left: 35px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .body_left_f_2 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 65px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .wz1,
+        .wz2 {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 14px;
+        }
+
+        .body_right {
+            width: 250px;
+            height: 100%;
+            background-color: #E6FFBB;
+            background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+            float: left;
+            margin-left: 35px;
+            margin-top: 8px;
+        }
+
+        .body_right ul li a {
+            text-decoration: none;
+            color: yellowgreen;
+            text-align: center;
+            display: block;
+            line-height: 40px;
+            background-color: yellow;
+        }
+
+        .body_right ul li a:hover {
+            color: pink;
+            font-size: 25px;
+        }
+
+        .body_right ul {
+            list-style-type: none;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+
+        .body_right ul li {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid 5px cornflowerblue;
+            width: 158px;
+            height: 40px;
+            margin-bottom: 22px;
+        }
+
+        .body_right_t {
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 150px;
+            width: 170px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border: solid 8px cornflowerblue;
+        }
+
+        .one:hover {
+            border: solid 8px pink;
+        }
+
+        .two {
+            width: 200px;
+            height: 500px;
+            margin-left: 18px;
+            border: solid 8px peachpuff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="a">首页</a></li>
+            <li><a href="a">热门精选</a></li>
+            <li><a href="a">攻略游记</a></li>
+            <li><a href="a">服务中心</a></li>
+            <li><a href="a">查看更多</a></li>
+        </ul>
+        <input class="sousuo" type="text" value="🔍搜索旅游资讯" />
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_t">
+                <div class="body_left_t_1">
+                    <div class="zz">
+                        <div class="name">
+                            <h3 class="name1">旅游景区</h3>
+                            <h3 class="name2">留园</h3>
+                            <hr />
+                            <hr />
+                            <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body_left_t_2">
+                    <h2>简介</h2>
+                    <br />
+                    <p class="p1">
+                        留园，曾名“东园”、“寒碧山庄”，位于江苏省苏州市姑苏区留园路338号，南临留园路，北至半边街，东邻市汽车客运集团有限公司，西为绣花弄，于明万历二十一年（1593年）始建，其后多有荒废易主，1953年，苏州市人民政府决定修复留园，其后不断修缮整治。
+                    </p>
+                    <br />
+                    <p class="p2">
+                        留园为中国大型古典私家园林，占地面积23300平方米，代表清代风格，园以建筑艺术著称，厅堂宏敞华丽，庭院富有变化，整个园林采用不规则布局形式，使园林建筑与山、水、石相融合而呈天然之趣。利用云墙和建筑群把园林划分为中、东、北、西四个不同的景区。留园内亭馆楼榭高低参差，曲廊蜿蜒相续有七百米之多，颇有步移景换之妙。建筑物约占园总面积四分之一。建筑结构式样代表清代风格，在不大的范围内造就了众多而各有特性的建筑，处处显示了咫尺山林、小中见大的造园艺术手法。
+                        [2] [6]
+                        1961年3月4日，留园被中华人民共和国国务院列入第一批全国重点文物保护单位。1997年12月，作为苏州古典园林典型例证，经联合国教科文组织批准，留园与拙政园、网师园、环秀山庄共同列入《世界遗产名录》。2007年，苏州园林（拙政园、虎丘山、留园）被评为国家AAAAA级旅游景区
+                    </p>
+                </div>
+            </div>
+            <div class="body_left_f">
+                <div class="body_left_f_1">
+                    <img class="tt1" src="留园2.jpg" />
+                    <h4>五峰仙馆</h4>
+                    <br />
+                    <p class="wz1">
+                        五峰仙馆因盛康从文征明停云馆中得峰石放在园内，故名“五峰仙馆”，大厅面阔五开间，由于梁柱及家具均以楠木制作，俗称为楠木厅，厅内装修精丽，陈设雅洁大方。此处旧为徐氏“后乐堂”，刘氏时扩建为“传经堂”。盛氏时因得文征明停云馆藏石，属吴大澂书其额，更名“五峰仙馆”。
+                    </p>
+                </div>
+                <div class="body_left_f_2">
+                    <img class="tt2" src="留园3.jpg" />
+                    <h4>涵碧山房</h4>
+                    <br />
+                    <p class="wz2">
+                        涵碧山房为中部主要建筑，俗称荷花厅，建筑三间，卷棚硬山造，东面紧靠明瑟楼，厅高大宽敞，陈设朴素，周围老树浓荫，风亭月榭，迤俪相属，楼台倒影，堪称图画。宋朱熹诗“一水方涵碧，千林已变红”。建筑面池，水清如碧，涵碧二字不仅指池水，同时也指周围山峦林木在池中的倒影，故借以为名。刘氏时称“卷石山房”，盛氏时名“涵碧山房”，因建筑前临荷池，故通常又称荷花厅，俞樾《留园记》中“凉台燠馆”即是指此。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_t">
+                <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+            </div>
+            <div class="body_right_f">
+                <ul>
+                    <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                    <li><a href="拙政园.html">拙政园</a></li>
+                    <li><a href="金鸡湖.html">金鸡湖</a></li>
+                    <li><a href="同里古镇.html">同里古镇</a></li>
+                    <li><a href="狮子林.html">狮子林</a></li>
+                    <li><a href="留园.html">留园</a></li>
+                    <li><a href="周庄古镇.html">周庄古镇</a></li>
+                </ul>
+                <img class="two" src="留园4.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

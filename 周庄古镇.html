@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="4.png" type="image/x-icon ">
+    <title>苏州旅游局-周庄古镇</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 1300px;
+            height: 30px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #fffbd5 0%, #d76d77 100%);
+        }
+
+        .top ul li {
+            list-style-type: none;
+            font-size: 16px;
+            float: left;
+            margin-left: 45px;
+        }
+
+        .top ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            width: 140px;
+            height: 30px;
+        }
+
+        .top ul li a:hover {
+            background-color: salmon;
+        }
+
+        .sousuo {
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+
+        .body {
+            width: 1280px;
+            height: 1300px;
+            margin: 0 auto;
+        }
+
+        .body_left {
+            width: 990px;
+            height: 100%;
+            float: left;
+        }
+
+        .body_left_t {
+            width: 100%;
+            height: 680px;
+            background-color: antiquewhite;
+            box-shadow: 4px 4px 8px 4px slategrey;
+            margin-bottom: 20px;
+        }
+
+        .body_left_t_1 {
+            width: 980px;
+            height: 380px;
+            background-image: url(周庄古镇1.jpg);
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 5px solid antiquewhite;
+        }
+
+        .zz {
+            width: 360px;
+            height: 360px;
+            background-color: gainsboro;
+            opacity: 0.5;
+            border-radius: 180px 180px 180px 180px;
+            box-shadow: 8px 10px 20px 10px antiquewhite;
+            position: absolute;
+        }
+
+        .name {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .name1 {
+            margin-left: 110px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .name2 {
+            margin-left: 40px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .xiaozi {
+            text-align: right;
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-left: 5px;
+            font-family: "楷体", "楷体_GB2312";
+        }
+
+        .p1,
+        .p2 {
+            font-size: 16px;
+            color: darkgreen;
+        }
+
+        .body_left_f {
+            width: 100%;
+            height: 600px;
+            background-color: cornflowerblue;
+            background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+            opacity: 0.8;
+        }
+
+        .body_left_f_1 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 85px;
+            margin-left: 70px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            border-radius: 100px 20px 120px 0;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        .tt1 {
+            width: 330px;
+            height: 260px;
+            margin-top: 30px;
+            margin-left: 45px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .tt2 {
+            width: 330px;
+            height: 260px;
+            margin-top: 28px;
+            margin-left: 35px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .body_left_f_2 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 65px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .wz1,
+        .wz2 {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 14px;
+        }
+
+        .body_right {
+            width: 250px;
+            height: 100%;
+            background-color: #E6FFBB;
+            background-image: linear-gradient(to right, #fffbd5 0%, #d76d77 100%);
+            float: left;
+            margin-left: 35px;
+            margin-top: 8px;
+            box-shadow: 3px 10px 12px 5px wheat;
+        }
+
+        .body_right ul li a {
+            text-decoration: none;
+            color: yellowgreen;
+            text-align: center;
+            display: block;
+            line-height: 40px;
+            background-color: yellow;
+        }
+
+        .body_right ul li a:hover {
+            color: pink;
+            font-size: 25px;
+        }
+
+        .body_right ul {
+            list-style-type: none;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+
+        .body_right ul li {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid 5px cornflowerblue;
+            width: 158px;
+            height: 40px;
+            margin-bottom: 22px;
+        }
+
+        .body_right_t {
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 150px;
+            width: 170px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border: solid 8px cornflowerblue;
+        }
+
+        .one:hover {
+            border: solid 8px pink;
+        }
+
+        .two {
+            width: 200px;
+            height: 500px;
+            margin-left: 18px;
+            border: solid 8px #eaafc8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="a">首页</a></li>
+            <li><a href="a">热门精选</a></li>
+            <li><a href="a">攻略游记</a></li>
+            <li><a href="a">服务中心</a></li>
+            <li><a href="a">查看更多</a></li>
+        </ul>
+        <input class="sousuo" type="text" value="🔍搜索旅游资讯" />
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_t">
+                <div class="body_left_t_1">
+                    <div class="zz">
+                        <div class="name">
+                            <h3 class="name1">旅游景区</h3>
+                            <h3 class="name2">周庄古镇</h3>
+                            <hr />
+                            <hr />
+                            <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body_left_t_2">
+                    <h2>简介</h2>
+                    <br />
+                    <p class="p1">.
+                        周庄镇，古称泽国，隶属于江苏省苏州市昆山市，位于昆山、吴江、上海三地交界处，镇域面积38.96平方公里。2017年，周庄镇有常住人口31730人。截至2019年，周庄镇共辖3个社区、10个行政村。
+                    </p>
+                    <br />
+                    <p class="p2">
+                        周庄镇始建于北宋元祐元年（1086年），因邑人周迪功郎捐地修全福寺而得名，是江南六大古镇之一。2019年，周庄镇实现地区生产总值49.5亿元，工业总产值31.8亿元，服务业增加值33亿元，固定资产投资12.4亿元，实现一般公共财政预算收入4.3亿元，同比增长27.8%，居民人均可支配收入44066元，同比增长8.3%。2019年5月，周庄镇复审确认为国家卫生县城（乡镇）；同年12月，周庄镇入选“2016—2018年度江苏省文明乡镇”名单。周庄由原来的小集迅速发展为商业大镇，与江南富豪沈万三的发迹很有关系。沈万三利用白蚬江(即东江)西接京杭大运河，东北接浏河的优势，出海贸易，将周庄变成了一个粮食、丝绸及多种手工业品的集散地和交易中心，促使周庄的手工业和商业得到了迅猛的发展，最突出的产品有丝绸、刺绣、竹器、脚炉、白酒等。周庄，悠远的历史，给古镇造就了诸多胜景。著名建筑学家罗哲文盛赞周庄“不但是江苏省的一个宝，而且是国家的一个宝”。
+                    </p>
+                </div>
+            </div>
+            <div class="body_left_f">
+                <div class="body_left_f_1">
+                    <img class="tt1" src="周庄古镇2.jpg" />
+                    <h4>夜游周庄</h4>
+                    <br />
+                    <p class="wz1">古镇水巷游推荐指数★★★★★
+                        乘船位置:古镇水巷游码头(沈厅对面)“你在船上看风景,看风景的人在岸上看你。”夜游周庄,最有氛围感的事情莫过于乘船游水乡了。乘坐蓝花布顶的小船,听船娘吟唱江南水乡小调,欣赏徐徐展开的周庄风情画卷,超级浪漫!PS:一艘船可乘坐1-6人,组队乘船更划算
+                    </p>
+                </div>
+                <div class="body_left_f_2">
+                    <img class="tt2" src="周庄古镇3.jpg" />
+                    <h4>富安烧饼</h4>
+                    <br />
+                    <p class="wz2">
+                        传说,沈万三每次海上行商时不便储存食物,只能携带干粮,就让人备上富安烧饼。富安烧饼闻起来香甜,吃起来薄脆,来周庄不尝尝富安烧饼绝对会后悔!江苏省苏州市昆山市特色,产地食品昆山富安烧饼。油纸包装,红纸封面,用草绳系着的富安烧饼,透着浓浓的江南古味。富安烧饼工艺相当复杂,买个饼重12克左右,号称天下最薄的烧饼了。面粉上撒上白芝麻,在两个对着的平底锅里烘制,只要10秒钟就出炉,口感纯粹到薄香脆。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_t">
+                <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+            </div>
+            <div class="body_right_f">
+                <ul>
+                    <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                    <li><a href="拙政园.html">拙政园</a></li>
+                    <li><a href="金鸡湖.html">金鸡湖</a></li>
+                    <li><a href="同里古镇.html">同里古镇</a></li>
+                    <li><a href="狮子林.html">狮子林</a></li>
+                    <li><a href="留园.html">留园</a></li>
+                    <li><a href="周庄古镇.html">周庄古镇</a></li>
+                </ul>
+                <img class="two" src="周庄古镇4.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

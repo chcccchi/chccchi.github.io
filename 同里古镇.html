@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="4.png" type="image/x-icon ">
+    <title>苏州旅游局-同里古镇</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 1300px;
+            height: 30px;
+            margin: 0 auto;
+            background-image: linear-gradient(to left, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+        }
+
+        .top ul li {
+            list-style-type: none;
+            font-size: 16px;
+            float: left;
+            margin-left: 45px;
+        }
+
+        .top ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            width: 140px;
+            height: 30px;
+        }
+
+        .top ul li a:hover {
+            background-color: salmon;
+        }
+
+        .sousuo {
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+
+        .body {
+            width: 1280px;
+            height: 1300px;
+            margin: 0 auto;
+        }
+
+        .body_left {
+            width: 990px;
+            height: 100%;
+            float: left;
+        }
+
+        .body_left_t {
+            width: 100%;
+            height: 680px;
+            background-color: antiquewhite;
+            background-image: url();
+            box-shadow: 4px 4px 8px 4px slategrey;
+            margin-bottom: 20px;
+        }
+
+        .body_left_t_1 {
+            width: 980px;
+            height: 380px;
+            background-image: url(同里古镇1.jpg);
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 5px solid antiquewhite;
+        }
+
+        .zz {
+            width: 360px;
+            height: 360px;
+            background-color: gainsboro;
+            opacity: 0.5;
+            border-radius: 180px 180px 180px 180px;
+            box-shadow: 8px 10px 20px 10px antiquewhite;
+            position: absolute;
+        }
+
+        .name {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .name1 {
+            margin-left: 110px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .name2 {
+            margin-left: 40px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .xiaozi {
+            text-align: right;
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-left: 5px;
+            font-family: "楷体", "楷体_GB2312";
+        }
+
+        .p1,
+        .p2 {
+            font-size: 16px;
+            color: darkgreen;
+        }
+
+        .body_left_f {
+            width: 100%;
+            height: 600px;
+            background-color: cornflowerblue;
+            background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+            opacity: 0.8;
+        }
+
+        .body_left_f_1 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 85px;
+            margin-left: 70px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            border-radius: 100px 20px 120px 0;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        .tt1 {
+            width: 330px;
+            height: 260px;
+            margin-top: 30px;
+            margin-left: 45px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .tt2 {
+            width: 330px;
+            height: 260px;
+            margin-top: 28px;
+            margin-left: 35px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .body_left_f_2 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 65px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .wz1,
+        .wz2 {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 14px;
+        }
+
+        .body_right {
+            width: 250px;
+            height: 100%;
+            background-color: #E6FFBB;
+            background-image: linear-gradient(to left, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+            float: left;
+            margin-left: 35px;
+            margin-top: 8px;
+        }
+
+        .body_right ul li a {
+            text-decoration: none;
+            color: yellowgreen;
+            text-align: center;
+            display: block;
+            line-height: 40px;
+            background-color: yellow;
+        }
+
+        .body_right ul li a:hover {
+            color: pink;
+            font-size: 25px;
+        }
+
+        .body_right ul {
+            list-style-type: none;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+
+        .body_right ul li {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid 5px cornflowerblue;
+            width: 158px;
+            height: 40px;
+            margin-bottom: 22px;
+        }
+
+        .body_right_t {
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 150px;
+            width: 170px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border: solid 8px cornflowerblue;
+        }
+
+        .one:hover {
+            border: solid 8px pink;
+        }
+
+        .two {
+            width: 200px;
+            height: 500px;
+            margin-left: 18px;
+            border: solid 8px #FAEBD7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="a">首页</a></li>
+            <li><a href="a">热门精选</a></li>
+            <li><a href="a">攻略游记</a></li>
+            <li><a href="a">服务中心</a></li>
+            <li><a href="a">查看更多</a></li>
+        </ul>
+        <input class="sousuo" type="text" value="🔍搜索旅游资讯" />
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_t">
+                <div class="body_left_t_1">
+                    <div class="zz">
+                        <div class="name">
+                            <h3 class="name1">旅游景区</h3>
+                            <h3 class="name2">同里古镇</h3>
+                            <hr />
+                            <hr />
+                            <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body_left_t_2">
+                    <h2>简介</h2>
+                    <br />
+                    <p class="p1">
+                        其实苏州的美,不仅雅在园林,而且秀在小镇,青石窄巷与小桥流水几乎成了江南古镇的招牌;多桥多弄与多廊多棚也成了江南古镇的特色;古朴典雅的民居与曲径通幽的宅弄,无论在风里雨里,依然在那里守候栉风沐雨的游子。而作为江南六大古镇之一的同里古镇,就是烟雨江南的典型代表,这里湖泊环绕,户户临水,河道石桥,卧龙凌波,处处柳风云影,时时水声笛韵,宛如一幅淡妆浓抹的画卷,足以引发人们对梦里水乡的所有想象。
+                    </p>
+                    <br />
+                    <p class="p2">
+                        走进同里古镇,烟雨蒙蒙,犹如染成一方雅致的水墨,使人沉醉于江南水乡的韵味,画不尽春花秋月,品不完同里印象。也许是因为水乡的缘故,同里的古桥繁多,镶嵌着历史斑驳的各种小桥,横跨在低吟浅唱的河道上,桥面上早已被行人足履磨得珠圆玉润的青石板,还有古老的同里街巷,自带年轮与沧桑,刻满岁月的痕迹。而桥下鸣琴一般淙淙的流水声与偶尔泛起点点惆怅的涟漪,揉和着桥身结满墨绿色的青苔与清晨撒落的露珠,迎合着河道中悠闲游荡的乌篷船与吱嘎的船橹声,伴着吴侬软语,和着咿呀的江南小调,还有远处石桥上持伞而过的江南少女,凌波微步,组成了一个充满诗情画意的古韵里。
+                    </p>
+                </div>
+            </div>
+            <div class="body_left_f">
+                <div class="body_left_f_1">
+                    <img class="tt1" src="同里古镇2.jpg" />
+                    <h4>退思园</h4>
+                    <br />
+                    <p class="wz1">
+                        漫步于退思园,眼前这座袖珍玲珑的庭院极具诗情画意,园内亭台楼阁,高台厚榭,雕梁画栋,梅兰竹菊与碎花小草衔接流畅,一切都显得那么闲适幽静,像船舷一样的亭台守望在荷花池的最深处,灵妙脱俗,独具匠心。在《台城》中曾有过这样描述:“江雨霏霏江草齐,六朝如梦鸟空啼。无情最是台城柳,依旧烟笼十里堤”。所以嘉荫堂与陈家牌坊也成为了同里古镇最著不古建筑,退思园也成了烟雨同里古镇的“世外桃源”。
+                    </p>
+                </div>
+                <div class="body_left_f_2">
+                    <img class="tt2" src="同里古镇3.jpg" />
+                    <h4>浓厚的小镇生活气息</h4>
+                    <br />
+                    <p class="wz2">
+                        漫步苏州同里古镇感受千年古镇魅力。千年古镇,世界同里。打卡苏州同里古镇,感受拥有1000多年历史的古镇魅力。同里古镇,被誉为江南六大古镇之一，生活气息浓厚。全国各地各种各样的古镇非常多大多数古镇景区里以游客和商户居多,本地居民不多。但是,同里古镇上住着许多本地居民,依旧保留着许多水乡生活的习俗和传统,生活气息浓厚。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_t">
+                <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+            </div>
+            <div class="body_right_f">
+                <ul>
+                    <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                    <li><a href="拙政园.html">拙政园</a></li>
+                    <li><a href="金鸡湖.html">金鸡湖</a></li>
+                    <li><a href="同里古镇.html">同里古镇</a></li>
+                    <li><a href="狮子林.html">狮子林</a></li>
+                    <li><a href="留园.html">留园</a></li>
+                    <li><a href="周庄古镇.html">周庄古镇</a></li>
+                </ul>
+                <img class="two" src="同里古镇4.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

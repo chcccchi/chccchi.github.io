@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="4.png" type="image/x-icon ">
+    <title>苏州旅游局-拙政园</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            width: 1300px;
+            height: 30px;
+            margin: 0 auto;
+            background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+        }
+
+        .top ul li {
+            list-style-type: none;
+            font-size: 16px;
+            float: left;
+            margin-left: 45px;
+        }
+
+        .top ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            line-height: 30px;
+            display: block;
+            width: 140px;
+            height: 30px;
+        }
+
+        .top ul li a:hover {
+            background-color: salmon;
+        }
+
+        .sousuo {
+            margin-top: 5px;
+            margin-left: 60px;
+        }
+
+        .body {
+            width: 1280px;
+            height: 1300px;
+            margin: 0 auto;
+        }
+
+        .body_left {
+            width: 990px;
+            height: 100%;
+            float: left;
+        }
+
+        .body_left_t {
+            width: 100%;
+            height: 680px;
+            background-color: antiquewhite;
+            box-shadow: 4px 4px 8px 4px slategrey;
+            margin-bottom: 20px;
+        }
+
+        .body_left_t_1 {
+            width: 980px;
+            height: 380px;
+            background-image: url(拙政园1.jpg);
+            margin: 0 auto;
+            margin-top: 5px;
+            border: 5px solid antiquewhite;
+        }
+
+        .zz {
+            width: 360px;
+            height: 360px;
+            background-color: gainsboro;
+            opacity: 0.5;
+            border-radius: 180px 180px 180px 180px;
+            box-shadow: 8px 10px 15px 10px antiquewhite;
+            position: absolute;
+        }
+
+        .name {
+            width: 300px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 110px;
+        }
+
+        .name1 {
+            margin-left: 110px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .name2 {
+            margin-left: 40px;
+            font-size: 33px;
+            font-weight: bold;
+        }
+
+        .xiaozi {
+            text-align: right;
+            font-size: 15px;
+            margin-left: 110px;
+        }
+
+        h2 {
+            margin-left: 5px;
+            font-size: 20px;
+        }
+
+        p {
+            text-indent: 2em;
+            margin-left: 5px;
+            font-family: "楷体", "楷体_GB2312";
+        }
+
+        .p1,
+        .p2 {
+            font-size: 16px;
+            color: darkgreen;
+        }
+
+        .body_left_f {
+            width: 100%;
+            height: 600px;
+            background-color: cornflowerblue;
+            background-image: linear-gradient(to left, #fddb92 0%, #d1fdff 100%);
+            opacity: 0.8;
+        }
+
+        .body_left_f_1 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 85px;
+            margin-left: 70px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            border-radius: 100px 20px 120px 0;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        .tt1 {
+            width: 330px;
+            height: 260px;
+            margin-top: 30px;
+            margin-left: 45px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .tt2 {
+            width: 330px;
+            height: 260px;
+            margin-top: 28px;
+            margin-left: 35px;
+            box-shadow: 2px 2px 4px 2px silver;
+        }
+
+        .body_left_f_2 {
+            width: 390px;
+            height: 85%;
+            float: left;
+            margin-top: 30px;
+            margin-left: 65px;
+            background-color: white;
+            box-shadow: 3px 3px 6px 3px darkgray inset;
+            background-image: linear-gradient(-45deg, #ffffff, #FFFACD);
+        }
+
+        h4 {
+            font-size: 18px;
+            margin-left: 15px;
+        }
+
+        .wz1,
+        .wz2 {
+            font-size: 16px;
+            margin-left: 15px;
+            margin-right: 14px;
+        }
+
+        .body_right {
+            width: 250px;
+            height: 100%;
+            background-color: #E6FFBB;
+            background-image: linear-gradient(to right, #f6d365 0%, #fda085 100%);
+            float: left;
+            margin-left: 35px;
+            margin-top: 8px;
+            box-shadow: 3px 10px 12px 5px navajowhite;
+        }
+
+        .body_right ul li a {
+            text-decoration: none;
+            color: yellowgreen;
+            text-align: center;
+            display: block;
+            line-height: 40px;
+            background-color: yellow;
+        }
+
+        .body_right ul li a:hover {
+            color: pink;
+            font-size: 25px;
+        }
+
+        .body_right ul {
+            list-style-type: none;
+            padding-top: 40px;
+            padding-left: 40px;
+        }
+
+        .body_right ul li {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid 5px cornflowerblue;
+            width: 158px;
+            height: 40px;
+            margin-bottom: 22px;
+        }
+
+        .body_right_t {
+            width: 100%;
+            height: 180px;
+            margin-top: 20px;
+        }
+
+        .one {
+            height: 150px;
+            width: 170px;
+            margin-left: 25px;
+            margin-top: 10px;
+            border: solid 8px cornflowerblue;
+        }
+
+        .one:hover {
+            border: solid 8px pink;
+        }
+
+        .two {
+            width: 200px;
+            height: 500px;
+            margin-left: 18px;
+            border: solid 8px pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <li><a href="a">首页</a></li>
+            <li><a href="a">热门精选</a></li>
+            <li><a href="a">攻略游记</a></li>
+            <li><a href="a">服务中心</a></li>
+            <li><a href="a">查看更多</a></li>
+        </ul>
+        <input class="sousuo" type="text" value="🔍搜索旅游资讯" />
+    </div>
+    <div class="body">
+        <div class="body_left">
+            <div class="body_left_t">
+                <div class="body_left_t_1">
+                    <div class="zz">
+                        <div class="name">
+                            <h3 class="name1">旅游景区</h3>
+                            <h3 class="name2">拙政园</h3>
+                            <hr />
+                            <hr />
+                            <p class="xiaozi">全国重点文物保护单位、世界文化遗产</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="body_left_t_2">
+                    <h2>简介</h2>
+                    <br />
+                    <p class="p1">
+                        拙政园，江南园林的代表，苏州园林中面积最大的古典山水园林，是苏州四大古名园之一，也是苏州园林中最大、最著名的一座，被列入《世界文化遗产名录》，堪称中国私家园林经典。始建于明朝正德年间今园辖地面积约八十三点五亩，开放面积约七十三亩，其中园林中部、西部及晚清张之万住宅（今苏州园林博物馆旧馆）为晚清建筑园林遗产，约三十八亩。中国四大名园之一，全国重点文物保护单位，国家5A级旅游景区，全国特殊旅游参观点，被誉为“中国园林之母”，一九九七年被联合国教科文组织（UNESCO）列为世界文化遗产。
+                    </p>
+                    <br />
+                    <p class="p2">
+                        拙政园占地面积52000平方米，又分东园、中园、西园三部分。东园山池相间，点缀有秫香馆、兰雪堂等建筑。西部水面迂回，布局紧凑，依山傍水建以亭阁，其中主体建筑鸳鸯厅是当时园主人宴请宾客和听曲的场所，厅内陈设考究。中园是拙政园的精华部分，其总体布局以水池为中心，亭台楼榭皆临水而建，有的亭榭则直出水中，具有江
+                        南水乡的特色。主体建筑远香堂位于水池南岸，隔池与主景东西两山岛相望，池水清澈广阔，遍植荷花，山岛上林荫匝地，水岸藤萝纷披，两山溪谷 间架有小桥
+                        山岛上各建一亭，西为雪香云蔚亭，东为待霜亭，四季景色因时而异。远香堂之西的“倚玉轩”与其西面船舫形的“香洲”遥遥相对，两者与其北面的“荷风四面 亭”成三足鼎立之势，都可随势赏荷。</p>
+                </div>
+            </div>
+            <div class="body_left_f">
+                <div class="body_left_f_1">
+                    <img class="tt1" src="拙政园2.jpg" />
+                    <h4>景点特色</h4>
+                    <br />
+                    <p class="wz1">
+                        拙政园向以"林木绝胜"著称。数百年来一脉相承，沿袭不衰。早期王氏拙政园三十一景中，三分之二景观取自植物题材，如桃花片，"夹岸植桃，花时望若红霞";竹涧，"夹涧美竹千挺"，"境特幽回";瑶圃百本，花时灿若瑶华。"归田园居也是丛桂参差，垂柳拂地，"林木茂密，石藓然"。每至春日，山茶如火，玉兰如雪。杏花盛开，"遮映落霞迷涧壑"。夏日之荷。秋日木芙蓉，如锦帐重叠。
+                    </p>
+                </div>
+                <div class="body_left_f_2">
+                    <img class="tt2" src="拙政园3.jpg" />
+                    <h4>卅六鸳鸯馆（十八曼陀罗花馆）</h4>
+                    <br />
+                    <p class="wz2">
+                        为西花园的主体建筑，南部称“十八曼陀罗花馆”，北部名“卅六鸳鸯馆”，这是古建筑中的一种鸳鸯厅形式。南厅是十八曼陀罗花馆，曼陀罗花即山茶花。北厅因临池曾养三十六对鸳鸯而得名。卅六鸳鸯馆内顶棚采用拱型状，既弯曲美观，遮掩顶上梁架，又利用这弧形屋顶来反射声音，增强音响效果，使得余音袅袅，绕梁萦回。
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body_right">
+            <div class="body_right_t">
+                <a href="index.html"><img class="one" src="主页链接.jpg"></a>
+            </div>
+            <div class="body_right_f">
+                <ul>
+                    <li><a href="苏州博物馆.html">苏州博物馆</a></li>
+                    <li><a href="拙政园.html">拙政园</a></li>
+                    <li><a href="金鸡湖.html">金鸡湖</a></li>
+                    <li><a href="同里古镇.html">同里古镇</a></li>
+                    <li><a href="狮子林.html">狮子林</a></li>
+                    <li><a href="留园.html">留园</a></li>
+                    <li><a href="周庄古镇.html">周庄古镇</a></li>
+                </ul>
+                <img class="two" src="拙政园4.jpg" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
